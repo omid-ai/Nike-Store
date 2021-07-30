@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:id="@+id/commentTitleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        tools:text="عنوان کامنت"
+        android:textAppearance="?textAppearanceBody1"
+        app:layout_constraintEnd_toStartOf="@+id/commentSendingDateTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentSendingDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        tools:text="تاریخ ارسال"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/authorEmailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ایمیل ارسال کننده"
+        android:textAppearance="?textAppearanceBody2"
+        android:textColor="?android:textColorSecondary"
+        app:layout_constraintStart_toStartOf="@+id/commentTitleTv"
+        app:layout_constraintTop_toBottomOf="@+id/commentTitleTv" />
+
+    <TextView
+        android:id="@+id/commentContentTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        tools:text="این کفش خیلی زیبا و خاص هستش و واقعا از خریدم راضی هستم و همچنین متشکرم از استاد ایوبی بابت نرم افزار فوق العاده ای که طراحی کردن."
+        android:textAppearance="?textAppearanceBody1"
+        app:layout_constraintEnd_toEndOf="@+id/commentSendingDateTv"
+        app:layout_constraintStart_toStartOf="@+id/authorEmailTv"
+        app:layout_constraintTop_toBottomOf="@+id/authorEmailTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

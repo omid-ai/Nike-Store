@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NikeBottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/navigation_bar_item_tint</item>
+        <item name="itemTextColor">@color/navigation_bar_item_tint</item>
+        <item name="itemRippleColor">@color/navigation_bar_ripple_color</item>
+    </style>
+    <style name="ActivatedItemTextAppearance" parent="TextAppearance.MyTheme.Caption">
+        <item name="android:fontFamily">@font/irsansxbold</item>
+        <item name="fontFamily">@font/irsansxbold</item>
+    </style>
+</resources>
